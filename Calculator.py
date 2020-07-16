@@ -13,7 +13,23 @@ def enter_number():
     except ValueError:
         print('Please, enter a number!')
         enter_number()
+        
+    '''
+        add return here for now it is broken 
+        
+        [root@vm172587 oshevelo]# python3 11.py
+Enter the number of elements: 3
+Enter the number: 2
+Enter operator: +
+Enter the number: 2
+Traceback (most recent call last):
+  File "11.py", line 52, in <module>
+    calculate()
+  File "11.py", line 36, in calculate
+    result += enter_number()
+TypeError: unsupported operand type(s) for +=: 'NoneType' and 'NoneType'
 
+    '''
 
 def enter_operator():
     valid_operators = ["*", "-", "+", "/"]
